@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <label>just to make sure it's you<br>(●'◡'●)</label> <br><br>
+            <form method="POST" id="nameForm">
+                <input type="hidden" name="access_key" value="df8f4799-5c0e-4d5b-9ac2-a5ec91ae3e77">
+                <input name="name" type="text" id="userName" placeholder="Your name (name only)">
+                <button type="submit" id="submitBtn">Submit</button>
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+
+    <div id="mainContent" class="container">
+        <div class="hint">Click to open the envelope</div>
+        <div class="envelope" onclick="toggleEnvelope()">
+            <div class="stamp">❤️</div>
+            <div class="scroll-hint">Scroll mo lang for more</div>
+            <div class="letter">
+                <h1 id="greeting"></h1>
+                <p>i hope this message finds you well. i can't send this message directly through your NGL because it has word limitation and this message is kinda long. so i decided to program a webpage to share my message with you. anyway, this is C from IT, that initial should be enough for you to know who i am.</p>
+                <p>yknow, i'm glad that you look fine these days, after what you've been going through. you also gained confidence. praying that you win in your life. i really wanna see you on top, achieve all of your dreams, and become the person you want to be.</p>
+                <p>for your friends, i hope they will support you sa mga goals mo until the end and stay by your side. if you ever feel betrayed by them, just be kind and forgiving, but also remember na protekhanan mo rin ang sarili mo. i know na ang true friendships go through ups and downs, but it's important to recognize when someone isn't treating you right.</p>
+                <p>show kindness and forgiveness, but don't be afraid na mag set ng boundaries and distance if kina-kailangan. surround yourself with people na mag uplift and ini-encourage ka, and always strive to be that supportive friend for others.</p>
+                <p>if meron ka nang gina-deal na someone right now, may that person will give the love you deserve, treat you with kindness, respect, understanding, and support you. if wala, hoping that you'll find a right person that will cherish and support you in every step of the way. don't rush; just be patient, darating at darating din yan.</p>
+                <p>if you don't know what to respond, no pressure, you don't need to reply because i don't want this message to be exposed in your story or what. i just want this message to be read by you alone because this message is just for you.</p>
+                <p>this might be cringe to you, but i'm really, really glad that i met you kahit saglit lang. hindi na ba talaga matutuloy, ser? jk hshsha. in fact, i missed you. sometimes, there's a part of me that will look for your presence, but i don't think you feel the same way. always remember that i'm still here, supporting you silently. allow me to adore you silently hanggang sa mapagod ako and finally decided to love myself again. keep shining, and goodluck to your studies. take care always, charrie!❤️</p>
+                <div class="close-hint">Click to close the envelope</div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" src="other.mp3" type="audio/mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
